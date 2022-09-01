@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Triangle Quiz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <nav>
-        <a href="index.html">Is Triangle?</a>
-        <a href="quiz.html">Triangle Quiz</a>
-        <a href="hypotenuse.html">Calculate Hypotenuse</a>
-        <a href="area.html">Find Area</a> 
+      <a href="index.html">Is Triangle?</a>
+      <a href="quiz.html">Triangle Quiz</a>
+      <a href="hypotenuse.html">Calculate Hypotenuse</a>
+      <a href="area.html">Find Area</a>
     </nav>
     <h1>Triangle Quiz</h1>
     <div id="main-quiz-container">
-    <form class="quiz-form" id="quiz-container">
+      <form class="quiz-form" id="quiz-container">
         <div class="question-container">
-            <p>1. What is the third angle for the angle1 = 45° and angle2 = 45° ?</p>
-            <label><input type="radio" name="question1" value="45°" />45°</label>
-            <label><input type="radio" name="question1" value="60°" />60°</label>
-            <label><input type="radio" name="question1" value="90°" />90°</label>
+          <p>
+            1. What is the third angle for the angle1 = 45° and angle2 = 45° ?
+          </p>
+          <label><input type="radio" name="question1" value="45°" />45°</label>
+          <label><input type="radio" name="question1" value="60°" />60°</label>
+          <label><input type="radio" name="question1" value="90°" />90°</label>
         </div>
         <div class="question-container">
-                <p>2. If a triangle has an angle of 90°, what is it called?</p>
-                <label><input type="radio" name="question2" value="acute" />Acute </label>
-                <label><input type="radio" name="question2" value="obtuse" />Obtuse  </label>
-                <label><input type="radio" name="question2" value="right angled" />Right
-                    Angled </label>
+          <p>2. If a triangle has an angle of 90°, what is it called?</p>
+          <label
+            ><input type="radio" name="question2" value="acute" />Acute
+          </label>
+          <label
+            ><input type="radio" name="question2" value="obtuse" />Obtuse
+          </label>
+          <label
+            ><input type="radio" name="question2" value="right angled" />Right
+            Angled
+          </label>
         </div>
-            <div class="question-container">
-                <p>3. If a triangle has angles 135°, 15°, 30°. Is it an obtuse triangle?</p>
-                <label><input type="radio" name="question3" value="yes" />Yes </label>
-                <label><input type="radio" name="question3" value="no" />No  </label>
-            </div>
-            <div class="question-container">
-                <p>4. If a triangle has angles 115°, 25°, 40°. Is it an acute triangle?</p>
-                <label><input type="radio" name="question4" value="yes" />Yes </label>
-                <label><input type="radio" name="question4" value="no" />No  </label>
-            </div>
-       
-            <div class="question-container">
-                <p>5. If a triangle has angles 90°, 60°, 30°. Is it a right angle triangle?</p>
-                <label><input type="radio" name="question5" value="yes" />Yes </label>
-                <label><input type="radio" name="question5" value="no" />No  </label>
-            </div>
-    
-       
-            <div class="question-container">
-                <p>6. If a triangle has 2 sides with equal lengths and 75° angle between them. What is the type of triangle?</p>
-                <label><input type="radio" name="question6" value="equilateral" />Equilateral </label>
-                <label><input type="radio" name="question6" value="isosceles" />Isosceles  </label>
-                <label><input type="radio" name="question6" value="right angled" />Right
-                    Angled </label>
-            </div>
-      
-        
-    </form>
-    <div id="btn-cnt">    
-        <button id="submit-answer-btn" class="btn">Submit Answer</button>
+        <div class="question-container">
+          <p>
+            3. If a triangle has angles 135°, 15°, 30°. Is it an obtuse
+            triangle?
+          </p>
+          <label><input type="radio" name="question3" value="yes" />Yes </label>
+          <label><input type="radio" name="question3" value="no" />No </label>
+        </div>
+        <div class="question-container">
+          <p>
+            4. If a triangle has angles 115°, 25°, 40°. Is it an acute triangle?
+          </p>
+          <label><input type="radio" name="question4" value="yes" />Yes </label>
+          <label><input type="radio" name="question4" value="no" />No </label>
+        </div>
 
+        <div class="question-container">
+          <p>
+            5. If a triangle has angles 90°, 60°, 30°. Is it a right angle
+            triangle?
+          </p>
+          <label><input type="radio" name="question5" value="yes" />Yes </label>
+          <label><input type="radio" name="question5" value="no" />No </label>
+        </div>
+
+        <div class="question-container">
+          <p>
+            6. If a triangle has 2 sides with equal lengths and 75° angle
+            between them. What is the type of triangle?
+          </p>
+          <label
+            ><input
+              type="radio"
+              name="question6"
+              value="equilateral"
+            />Equilateral
+          </label>
+          <label
+            ><input type="radio" name="question6" value="isosceles" />Isosceles
+          </label>
+          <label
+            ><input type="radio" name="question6" value="right angled" />Right
+            Angled
+          </label>
+        </div>
+      </form>
+      <div id="btn-cnt">
+        <button id="submit-answer-btn" class="btn">Submit Answer</button>
+      </div>
+      <h2 id="output"></h2>
     </div>
-    <div id="output"></div>
-</div>
 
     <script src="quiz.js"></script>
-</body>
-
+  </body>
 </html>
