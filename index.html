@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>triangles</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <a href="index.html">Is Triangle?</a>
-        <a href="quiz.html">Triangle Quiz</a>
-        <a href="hypotenuse.html">Calculate Hypotenuse</a>
-        <a href="area.html">Find Area</a> 
+      <a href="index.html">Is Triangle?</a>
+      <a href="quiz.html">Triangle Quiz</a>
+      <a href="hypotenuse.html">Calculate Hypotenuse</a>
+      <a href="area.html">Find Area</a>
     </nav>
-    <h1>Is Triangle? </h1>
+    <h1>Is Triangle?</h1>
 
     <div id="container">
+      <label
+        >Angle 1 =
+        <input type="number" class="angle-input" placeholder="angle in degree"
+      /></label>
 
-    <label for="angle1">angle1</label>
-    <input type="number" class = "angle-input"/>
-    <label for="angle2">angle2</label>
-    <input type="number" class = "angle-input"/>
-    <label for="angle3">angle3</label>
-    <input type="number" class = "angle-input"/>
-    <button id="is-triangle-btn" class="btn">Is Triangle?</button>
-    <div id="output"></div>
+      <label
+        >Angle 2 =
+        <input type="number" class="angle-input" placeholder="angle in degree"
+      /></label>
 
+      <label
+        >Angle 3 =
+        <input type="number" class="angle-input" placeholder="angle in degree"
+      /></label>
+      <button id="is-triangle-btn" class="btn">Is Triangle?</button>
+      <div id="output"></div>
     </div>
-    
 
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>

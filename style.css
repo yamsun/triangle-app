@@ -2,12 +2,13 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: large;
 }
 nav{
     background-color: rgb(39, 144, 201);
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     font-size: larger;
     padding: 0.7rem;
@@ -39,6 +40,8 @@ h1{
     margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #container label{
@@ -48,7 +51,7 @@ h1{
 
 button{
     margin: 1rem;
-    width: 50%;
+    /* width: 10%; */
     margin: auto;
     margin-top: 0.8rem;
     margin-bottom: 1rem;
@@ -61,9 +64,11 @@ button{
     flex-direction: column;
 }
 .question-container{
-    background-color: rgb(211, 234, 240);
-    padding: 0.5rem;
-    margin: 0.2rem 0;
+    /* background-color: rgb(211, 234, 240); */
+    background-color: rgb(229, 201, 250);
+    border-radius: 1em;
+    padding: 1.2rem;
+    margin: 1rem 0;
 }
 
 .btn{
@@ -74,9 +79,13 @@ button{
     color: rgb(0, 0, 0);
     font-size:medium;
     border:0ch;
+    border: 5px solid rgb(145, 210, 245);
+
 }
 .btn:hover{
     background-color: rgb(80, 186, 243);
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 
@@ -94,5 +103,6 @@ button{
 }
 
 input{
-    accent-color: pink;
+    /* accent-color: #1f3f07; */
 }
+
